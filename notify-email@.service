@@ -1,0 +1,9 @@
+[Unit]
+Description=Send Systemd Notifications to Email
+
+[Service]
+Type=oneshot
+ExecStart=/home/user/scripts/service_notifications/email.sh -s %i
+WorkingDirectory=/home/user/scripts/service_notifications
+[Install]
+WantedBy=multi-user.target

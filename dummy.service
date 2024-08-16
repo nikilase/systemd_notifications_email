@@ -1,0 +1,7 @@
+[Unit]
+Description=Dummy Service
+After=network-online.target
+OnFailure=notify-email@%i.service
+
+[Service]
+...
